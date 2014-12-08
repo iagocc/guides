@@ -2,6 +2,13 @@ Guides
 ======
 Guides for getting things done, programming well, and programming in style:
 
+##Starters
+
+* [Learning](starters/trailmap.md)
+
+
+## Coding
+
 * https://github.com/thoughtbot/guides/
 * http://mdo.github.io/code-guide/
 * https://github.com/rwaldron/idiomatic.js/

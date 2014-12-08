@@ -1,0 +1,9 @@
+* https://developers.google.com/web/fundamentals/
+* https://developers.google.com/web/starter-kit/
+* https://guides.github.com/introduction/flow/index.html
+* https://github.com/thoughtbot/guides/
+* http://mdo.github.io/code-guide/
+* https://github.com/rwaldron/idiomatic.js/
+* https://github.com/thoughtbot/dotfiles/
+* https://www.codeschool.com/
+* https://www.edx.org/

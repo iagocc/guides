@@ -3,7 +3,7 @@
 Guides to effectively manage and maintain a server.
 
 * [Setting up a secure server](server/setup.md)
-* [Setting up an app deployment server](server/setup_app)
+* [Setting up an app deployment server](server/setup_app.md)
 
 ## Managing a server
 

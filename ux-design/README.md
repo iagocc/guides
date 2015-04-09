@@ -46,3 +46,34 @@ Each part of C-P-S is questionable on its own. I might wrongly describe the
 target group. I could misunderstand a problem my target group is having. Or we
 could create a product that doesn't address the problem users are facing.
 
+## Canvas as a design tool
+
+Alex Osterwalder writes in his book `Business Model Generation`  about an
+amazing method of describing any business idea. The business Model Canvas (BMC).
+This eight-field table can do what an extended business plan struggles to
+achieve. It can explain your business and it resolves around the `Unique Value
+Proposition (describing the way you're different from your competitors and why
+you are worth spending money on)`
+
+It also describes your idea, key partners, resources and model of revenue.
+
+But how is it all connected to user experience design?
+
+As we all know designing a user experience means taking care of the whole
+product. The end-to-end experience is what you are aiming at. A BMC enables you
+to grasp the basic fundamentals of the product in one place and understand at
+glance the business and user side.
+
+**Remember that any commercial project UX design cannot be separated from the
+business model of a product**
+
+[business_model_canvas_poster.jpg](business_model_canvas_poster.jpg)
+
+It's divided into two parts (split right into the middle): Product and Market,
+and it clearly shows exactly what your product is and who will benefit from its
+use. A lean version of this canvas should be developed iteratively (just like
+your product).
+
+Great UX design stand upon efficient collaboration.
+
+## The road to success

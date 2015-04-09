@@ -1,5 +1,4 @@
-# UX-Design
-
+# UX-Design in a nutshell
 
 ## What is user experience design?
 
@@ -77,3 +76,54 @@ your product).
 Great UX design stand upon efficient collaboration.
 
 ## The road to success
+
+In the age of user experience design you need to focus on the users' problems
+rather than on the technology to solve them.
+
+## Get to know your users
+
+User experience design is human centrix - it dies without a decent amount of
+interaction between human beings.
+
+*Talk to your user, get to know them*
+
+### Drawing phase
+
+In this phase you need to sum up on your previous design efforts in a set of
+sketches. You could go even further and simulate interactions in a prototyping
+piece of software. The drawing isn't where a "Great User Experience" happens.
+This happens within the interaction with the customer and if what you designed
+actually solved their problem.
+
+Prepare for famous quote:
+
+```
+Design is not just what it looks like and feels like. Design is how it works** ~
+Steve Jobs
+```
+
+To succeed on the *how it works* side and create  something valuable you need to
+focus on the whole experience, not just the aesthetic value.
+
+Questions:
+  - Does your design address the target group?
+  - Does it resolve their real problem?
+  - Is your solution an accurate response to your target group's needs?
+
+The single most important thing you should learn is:
+
+```
+You won't meet customers in the reflection on your screen. You have to get out
+of the building and really talk to people.
+```
+
+### Guerilla research
+
+Guerilla stands for atypical, cheap and somehow aggressive
+methods of achieving goals
+
+“It’s better to check your product with one person than not check it at all -
+argued Krug”
+
+You should always do research that can be most economically valid - create the
+biggest value for the least amount of money

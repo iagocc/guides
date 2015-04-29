@@ -302,8 +302,8 @@ git clone git://github.com/sstephenson/ruby-build.git
 Install ruby (this can take a while)
 
 ```
-rbenv install 2.1.5; rbenv rehash
-rbenv global 2.1.5
+rbenv install 2.2.2; rbenv rehash
+rbenv global 2.2.2
 ```
 
 Install bundler

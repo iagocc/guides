@@ -1,7 +1,8 @@
-estoring backups
+# Restoring backups
 
-Visit:
-[https://console.aws.amazon.com/s3/home?region=eu-west-1](https://console.aws.amazon.com/s3/home?region=eu-west-1)
+## Prerequisites
+
+Visit: [https://console.aws.amazon.com/s3/home](https://console.aws.amazon.com/s3/home)
 
 * Go to your backups bucket.
 * Click the project you want a backup from.
@@ -15,7 +16,7 @@ cd ~/Downloads
 scp -P 12013 [project].tar [user]@[server]:
 ```
 
-The tar file should be on the remote server.
+The tar file should now be on the remote server.
 
 Login to remote server using ssh:
 

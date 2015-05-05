@@ -1,6 +1,6 @@
-#Setting up an app deployment server
+# Setting up an app deployment server
 
-##Prerequisites
+## Prerequisites
 
 * [Setup server from scratch](./setup.md)
 
@@ -22,11 +22,12 @@ sudo apt-get install build-essential git-core libreadline-gplv2-dev curl
 libssl-dev libxslt-dev libxml2-dev libpcre3-dev libpcrecpp0 unzip
 python-software-properties
 ```
-## Install nginx (We need to build and install nginx from source to add the
-nginx_pagespeed module.) Create the nginx user.
+## Install nginx with pagespeed module.
+
+Create the nginx user
 
 ```
-sudo useradd -m nginx  
+sudo useradd -m nginx
 ```
 
 Create a temporary folder for building nginx
@@ -84,8 +85,7 @@ cd nginx-1.7.6/
 --add-module=$HOME/sources/ngx_pagespeed-release-1.9.32.1-beta \
 --without-http_scgi_module            \
 --without-http_uwsgi_module           \
---without-http_fastcgi_module   \
- 
+--without-http_fastcgi_module         \
 ```
 
 Build and install nginx.
@@ -109,16 +109,16 @@ sudo mkdir /etc/nginx/sites-available
 ```
 
 Replace /etc/nginx/nginx.conf with the following to support multiple sites and
-pagespeed.
+pagespeed
 
 ```
 user nginx;
 worker_processes  4;
- 
+
 events {
   worker_connections  1024;
 }
- 
+
 http {
 
   # Basic settings
@@ -156,12 +156,11 @@ application/xml application/rss+xml application/atom+xml application/rdf+xml;
 
   access_log /var/log/nginx/access.log;
   error_log /var/log/nginx/error.log;
- 
+
   # Virtual hosts
-  
+
   include /etc/nginx/sites-enabled/*;
 }
-
 ```
 
 Add the following init script to /etc/init.d/nginx
@@ -271,7 +270,7 @@ Make the [user] owner of the directory
 sudo chown -R [user] /var/www
 ```
 
-## Install ruby
+## Install ruby [RAILS]
 
 Install rbenv globally
 
@@ -312,7 +311,7 @@ Install bundler
 gem install bundler --no-rdoc --no-ri; rbenv rehash
 ```
 
-## Install NodeJS
+## Install NodeJS [NodeApps/RAILS]
 
 ```
 sudo add-apt-repository ppa:chris-lea/node.js
@@ -320,14 +319,14 @@ sudo apt-get update
 sudo apt-get install nodejs
 ```
 
-## Install ImageMagick
+## Install ImageMagick[RAILS imageupload]
 
 ```
 sudo apt-get install imagemagick --fix-missing
 sudo ln -s /usr/bin/identify /usr/local/bin/identify
 ```
 
-## [OPTIONAL] Install Postgres
+## Install Postgres [OPTIONAL]
 
 This step may fail so try again if it does:
 
@@ -367,7 +366,8 @@ Test if you can access the database as [user]:
 psql -l // defaults to logged in ssh user
 ```
 
-## [OPTIONAL] Install MongoDB
+## Install MongoDB [OPTIONAL]
+
 Add the key for the repository.
 
 ```
@@ -393,7 +393,7 @@ Install the package.
 sudo apt-get install mongodb-10gen
 ```
 
-## [OPTIONAL] Installing redis:
+## Installing redis [OPTIONAL]
 
 ```
 cd ~
@@ -412,5 +412,5 @@ rm -rf redis-stable*
 Test if redis is installed succesfully
 
 ```
-redis-cli // If it connects you're good to go
+redis-cli
 ```

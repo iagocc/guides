@@ -1,4 +1,4 @@
-#Connecting to a remote server
+# Connecting to a remote server
 
 Connect to the server using `ssh`:
 

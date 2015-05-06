@@ -15,7 +15,6 @@ Guides to effectively manage and maintain a server.
 
 * [Configuring your application for deployment to a server using
   capistrano](server/app_deployment.md)
-* [Configuring app based backup COMING SOON]
 
 ## Securing your application
 

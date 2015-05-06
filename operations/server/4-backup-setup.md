@@ -1,4 +1,8 @@
-#Configuring backups
+# Configuring backups
+
+## Prerequisites
+
+* [Create deploy server](./application_ready_setup.md)
 
 ## Installation
 
@@ -26,7 +30,7 @@ rbenv rehash // Recreates shims
 
 !!! Do not add gem backup to another application's Gemfile. !!!
 
-This will install Backup, along with all of it's required dependencies.
+This will install Backup, along with all of it's required dependencies
 
 ## Updating
 
@@ -45,6 +49,7 @@ gem install backup -v '4.1.0'
 
 When you update Backup, the new version of the Backup gem will be installed, but
 older versions are not removed.
+
 To cleanup, run:
 
 ```
@@ -86,19 +91,18 @@ global_backup.tar.gz.aad
 ```
 
 
-For critical and sensitive projects you may want to add the encryption options
-like so:
+For critical and sensitive projects you may want to add the encryption options like so:
 
 ```
 [--encryptor=ENCRYPTOR]      # (gpg, openssl)
 ```
 
 This will create a new file: ~/Backup/models/global_backup.rb
-Open the file and just omit what you don't need, and change what you do need and
-you're done.
-
+Open the file and just omit what you don't need, and set configurations
+correctly.
 
 ```
+# Example
 # encoding: utf-8
 
 ##
@@ -194,8 +198,7 @@ end
 
 ## Performing backups
 
-Before performing backups make sure the config files is configured correctly and
-the following command succeeds:
+Before performing backups make sure the config files is configured correctly and the following command succeeds:
 
 ```
 backup check
@@ -204,7 +207,7 @@ backup check
 The most basic command for performing a backup is:
 
 ```
-backup perform --trigger [MODEL_NAME in global_backup.rb]
+backup perform --trigger [MODEL_NAME]
 ```
 
 Advanced options:
@@ -234,10 +237,9 @@ wheneverize
 
 * Open the config/schedule.rb file and add the following:
 
-
 ```
 every 1.day, :at => '2:00 am' do
-  #Be sure to add the full shim path to backup command else it will not run.
+  # Be sure to add the full shim path to backup command else it will not run.
   command "/usr/local/rbenv/shims/backup perform -t [servername from model] " 
 end
 ```
@@ -245,7 +247,7 @@ end
 * Run whenever with no arguments see the crontab entry this will create
 
 ```
-whenever # This will NOT CREATE the crontab entry.
+whenever # NOTE: This will NOT CREATE the crontab entry.
 ```
 
 * To write (or update) this job in your crontab, use:

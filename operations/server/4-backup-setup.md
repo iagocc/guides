@@ -182,11 +182,11 @@ this PATH!!!
   # Slack [Notifier]
   #
   notify_by Slack do |slack|
-    slack.on_success = true
+    slack.on_success = false
+    slack.on_warning = false
     slack.on_failure = true
 
-    slack.team = '[TEAM_NAME]'
-    slack.token = '[API_TOKEN]'
+    slack.webhook_url = 'my_webhook_url'
 
     slack.channel = '[#CHANNEL]'
     slack.username = '[BACKUP USERNAME]'
